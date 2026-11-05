@@ -1,0 +1,266 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة ديجيتال برو - انطلق بمشروعك الرقمي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0f172a;
+            border-bottom: 1px solid #1e293b;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #06b6d4, #2563eb);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .logo-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn-header {
+            background: linear-gradient(135deg, #06b6d4, #2563eb);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .badge {
+            background-color: rgba(6, 182, 212, 0.1);
+            color: #22d3ee;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        .hero h1 span {
+            color: #22d3ee;
+        }
+        .hero p {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .btn-main {
+            background-color: #06b6d4;
+            color: #0f172a;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-sec {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid #334155;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .features {
+            padding: 40px 20px;
+            background-color: #1e293b55;
+            border-top: 1px solid #1e293b;
+            border-bottom: 1px solid #1e293b;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-title h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        .pricing {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .price-box {
+            background-color: #1e293b;
+            border: 2px solid #06b6d4;
+            border-radius: 16px;
+            padding: 30px 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .price-box h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 36px;
+            color: #22d3ee;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .price-features {
+            list-style: none;
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        .price-features li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon">د</div>
+            <span class="logo-text">ديجيتال برو</span>
+        </div>
+        <a href="#pricing" class="btn-header">ابدأ الآن</a>
+    </header>
+
+    <section class="hero">
+        <span class="badge">🚀 الحل الأمثل لمشاريعك الرقمية</span>
+        <h1>طور أعمالك وبيع منتجاتك الرقمية <span>بأسرع صفحة هبوط</span></h1>
+        <p>قالب ويب احترافي، مصمم بعناية فائقة لزيادة المبيعات وتحويل زوار موقعك إلى عملاء حقيقيين بكل سهولة واحترافية.</p>
+        <div class="hero-buttons">
+            <a href="#pricing" class="btn-main">احصل على القالب الآن</a>
+            <a href="#features" class="btn-sec">اكتشف المميزات</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="section-title">
+            <h2>ليه تختار قالبنا؟</h2>
+            <p>كل الأدوات اللي محتاجها عشان تظهر بشكل احترافي قدام عملائك.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>سرعة فائقة</h3>
+                <p>كود نظيف ومرتب ومبرمج لضمان فتح الصفحة في أجزاء من الثانية.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>متوافق مع كل الشاشات</h3>
+                <p>تصميم مرن يتكيف تلقائياً مع شاشات الموبايل والتابلت والكمبيوتر.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>مُصمم لزيادة المبيعات</h3>
+                <p>توزيع مدروس للأزرار والعناصر لدفع الزائر نحو اتخاذ قرار الشراء فوراً.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>خطط الأسعار البسيطة</h2>
+            <p>ابدأ الآن واحصل على نسختك الكاملة بسعر مميز.</p>
+        </div>
+        <div class="price-box">
+            <h3>الباقة الاحترافية</h3>
+            <div class="price">$10</div>
+            <ul class="price-features">
+                <li>✓ كود مصدر كامل ومنظم</li>
+                <li>✓ متجاوب مع الهواتف والتابلت</li>
+                <li>✓ تعديل سهل للألوان والنصوص</li>
+                <li>✓ دعم فني وتوجيه للموقع</li>
+            </ul>
+            <a href="#pricing" class="btn-main" style="display: block;">اطلب الخدمة الآن</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - تم التطوير بكل إتقان واحترافية.</p>
+    </footer>
+
+</body>
+</html>
